@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Web;
+
+namespace ConcursoPesca.Models
+{
+    public class ConsursoPescaContext : DbContext
+    {
+        public ConsursoPescaContext() : base("name=DefaultConnection")
+        {
+
+        }
+        public DbSet<Concurso> Concursos { get; set; }
+        public DbSet<Peixe> Peixes { get; set; }
+        public DbSet<Pescador> Pescadores { get; set; }
+        public DbSet<Pescaria> Pescarias { get; set; }
+        public DbSet<PontuacaoPeixe> PontuacoesPeixes { get; set; }
+    }
+}

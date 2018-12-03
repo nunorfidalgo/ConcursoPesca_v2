@@ -174,16 +174,46 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ConcursosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812032217576_ApplicationDbContext.cs" />
+    <Compile Include="Migrations\201812032217576_ApplicationDbContext.Designer.cs">
+      <DependentUpon>201812032217576_ApplicationDbContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812032221485_ApplicationDbContext-lixo.cs" />
+    <Compile Include="Migrations\201812032221485_ApplicationDbContext-lixo.Designer.cs">
+      <DependentUpon>201812032221485_ApplicationDbContext-lixo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812032239121_concursodata.cs" />
+    <Compile Include="Migrations\201812032239121_concursodata.Designer.cs">
+      <DependentUpon>201812032239121_concursodata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812032245420_concursodata1.cs" />
+    <Compile Include="Migrations\201812032245420_concursodata1.Designer.cs">
+      <DependentUpon>201812032245420_concursodata1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Concurso.cs" />
+    <None Include="Models\ConcursosPescaContext_cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Peixe.cs" />
+    <Compile Include="Models\Pescador.cs" />
+    <Compile Include="Models\Pescaria.cs" />
+    <Compile Include="Models\PontuacaoPeixe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Content Include="Views\Concursos\Create.cshtml" />
+    <Content Include="Views\Concursos\Delete.cshtml" />
+    <Content Include="Views\Concursos\Details.cshtml" />
+    <Content Include="Views\Concursos\Edit.cshtml" />
+    <Content Include="Views\Concursos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -196,6 +226,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -257,6 +288,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201812032217576_ApplicationDbContext.resx">
+      <DependentUpon>201812032217576_ApplicationDbContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812032221485_ApplicationDbContext-lixo.resx">
+      <DependentUpon>201812032221485_ApplicationDbContext-lixo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812032239121_concursodata.resx">
+      <DependentUpon>201812032239121_concursodata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812032245420_concursodata1.resx">
+      <DependentUpon>201812032245420_concursodata1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
